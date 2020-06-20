@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/salary/static/css/main.f254066e.chunk.css",
+    "main.js": "/salary/static/js/main.0d132e31.chunk.js",
+    "main.js.map": "/salary/static/js/main.0d132e31.chunk.js.map",
+    "runtime-main.js": "/salary/static/js/runtime-main.23be8e35.js",
+    "runtime-main.js.map": "/salary/static/js/runtime-main.23be8e35.js.map",
+    "static/js/2.b234529b.chunk.js": "/salary/static/js/2.b234529b.chunk.js",
+    "static/js/2.b234529b.chunk.js.map": "/salary/static/js/2.b234529b.chunk.js.map",
+    "index.html": "/salary/index.html",
+    "precache-manifest.015bfa5c73fcd2e6aa49e9f3887d56ab.js": "/salary/precache-manifest.015bfa5c73fcd2e6aa49e9f3887d56ab.js",
+    "service-worker.js": "/salary/service-worker.js",
+    "static/css/main.f254066e.chunk.css.map": "/salary/static/css/main.f254066e.chunk.css.map",
+    "static/js/2.b234529b.chunk.js.LICENSE.txt": "/salary/static/js/2.b234529b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/salary/static/media/time-is-money.e3094980.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23be8e35.js",
+    "static/js/2.b234529b.chunk.js",
+    "static/css/main.f254066e.chunk.css",
+    "static/js/main.0d132e31.chunk.js"
+  ]
+}
