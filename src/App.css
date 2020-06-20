@@ -1,0 +1,246 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section{}
+.main-header{
+  min-width: 100vw;
+  background-color: #0b3144;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  color: #fff;
+}
+.main-header a{
+  color: #fff;
+  font-family: 'poppins';
+}
+.main-menu{
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.mobile-menu{
+  color: #fff;
+  height: 38px;
+  align-items: center;
+  font-family: 'poppins';
+  font-size: 20px;
+}
+.logo-wrap{
+  width: 276px;
+}
+.toggle-btn{
+  float: left;
+  height: 64px;
+  width: 55px;
+  border: none;
+  background: url('./icons/offcanvas-icon.png');
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.offcanvas-menu{
+  z-index: 100;
+  min-height: 100%;
+  width: 300px;
+  background-color: inherit;
+  background-color: #0b3144;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.off-canvas-header{
+  background-color: #031720;
+  min-height: 239px;
+  min-width: 300px;
+  align-items: center;
+}
+.off-canvas-inner{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.offcanvas-menu::before{
+  position: absolute;
+  top: auto;
+  right: 20px;
+  bottom: 50px;
+  left: auto;
+  display: block;
+  width: 40px;
+  height: 60px;
+  background-color: transparent;
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-position: 1px 1px;
+  background-size: 5px 5px;
+  content: '';
+  opacity: .2;
+}
+.btn-close {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+}
+.off-canvas-close-btn {
+  font-size: 20px;
+  border-radius: 15%;
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  opacity: .7;
+  transition: all .3s cubic-bezier(0.32, 0.74, 0.57, 1);
+  float: right;
+  top: 5px;
+  right: 10px;
+}
+.off-canvas-logo{
+  position: relative;
+  top: 75px;
+  left: 90px;
+}
+.holder{
+  background: linear-gradient(to left bottom, rgba(0, 0, 0, 0.5), #0b3144), url("./icons/time-is-money.jpg");
+  width: 100%;
+  height: 342px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  display: flex;
+}
+.holder h1{
+  color: #fff;
+  font-family: 'baloo 2';
+  font-size: 3em;
+}
+.holder p{
+  color: #fff;
+  font-family: 'poppins';
+  font-size: 1.5em;
+  width: 40%;
+}
+.text-holder{
+  position: relative;
+  top: 50px;
+  left: 30px;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 20px;
+  
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Baloo 2';
+  width: 50vw;
+  margin: auto;
+  margin-top: 10px;
+  color: #0b3144;
+}
+
+.form-container h1{
+  text-align: center;
+}
+.form-container p{
+  font-size: 2em;
+  text-align: center;
+  color: steelblue;
+  margin: 0;
+}
+.button-container{
+  width: 50%;
+  margin: auto;
+}
+.button{
+  background-color: #0d4764;
+  color: #fff;
+}
+.button:hover{
+  background-color: #0b3144;
+}
+
+.holder-button{
+  position: relative;
+  top: 45%;
+  right: 10%;
+  width: 50%;
+  height: fit-content;
+}
+.google-button{
+  background-image: url('./icons/google-sign-in.png');
+  background-repeat: no-repeat;
+  background-position: 10px 6px ;
+  background-size: 25px;
+  margin-bottom: 10px;
+}
+
+.github-button{
+  background-image: url('./icons/github-sign-in.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px 4px ;
+  background-size: 45px;
+}
+
+@media (max-width: 500px){
+  .holder h1{
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .holder p{
+    width: 80%;
+    font-size: 17px;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-container{
+    width: 100vw;
+  }
+  .form-container p{
+    font-size: 1.5em;
+  }
+  .holder-button{
+    position: relative;
+    top: 90px;
+    left: 18px;
+    min-width: 90vw;
+ 
+  }
+  .text-holder{
+    height: max-content;
+  }
+  .holder{
+    display: flex;
+    flex-direction: column;
+  }
+  .button-container{
+    width: 100%;
+  }
+  .google-button{
+    background-position: 20px 6px ;
+  }
+  .github-button{
+    background-position: 10px 4px ;
+  }
+}
