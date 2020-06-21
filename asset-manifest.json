@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/salary/static/css/main.f254066e.chunk.css",
-    "main.js": "/salary/static/js/main.0438e755.chunk.js",
-    "main.js.map": "/salary/static/js/main.0438e755.chunk.js.map",
+    "main.css": "/salary/static/css/main.d44e2fd0.chunk.css",
+    "main.js": "/salary/static/js/main.b49e9934.chunk.js",
+    "main.js.map": "/salary/static/js/main.b49e9934.chunk.js.map",
     "runtime-main.js": "/salary/static/js/runtime-main.23be8e35.js",
     "runtime-main.js.map": "/salary/static/js/runtime-main.23be8e35.js.map",
     "static/js/2.b234529b.chunk.js": "/salary/static/js/2.b234529b.chunk.js",
     "static/js/2.b234529b.chunk.js.map": "/salary/static/js/2.b234529b.chunk.js.map",
     "index.html": "/salary/index.html",
-    "precache-manifest.932ae2ef7c73a394aa834f047836ae2a.js": "/salary/precache-manifest.932ae2ef7c73a394aa834f047836ae2a.js",
+    "precache-manifest.9c1a3c0e8f224658c6338d06d909d389.js": "/salary/precache-manifest.9c1a3c0e8f224658c6338d06d909d389.js",
     "service-worker.js": "/salary/service-worker.js",
-    "static/css/main.f254066e.chunk.css.map": "/salary/static/css/main.f254066e.chunk.css.map",
+    "static/css/main.d44e2fd0.chunk.css.map": "/salary/static/css/main.d44e2fd0.chunk.css.map",
     "static/js/2.b234529b.chunk.js.LICENSE.txt": "/salary/static/js/2.b234529b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/salary/static/media/time-is-money.e3094980.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.23be8e35.js",
     "static/js/2.b234529b.chunk.js",
-    "static/css/main.f254066e.chunk.css",
-    "static/js/main.0438e755.chunk.js"
+    "static/css/main.d44e2fd0.chunk.css",
+    "static/js/main.b49e9934.chunk.js"
   ]
 }
