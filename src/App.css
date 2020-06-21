@@ -3,12 +3,23 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
-.main-section{}
+
+.hover-animation{
+  
+  text-decoration: none;
+}
+
+.hover-animation:hover{
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
 .main-header{
   min-width: 100vw;
   background-color: #0b3144;
-  min-height: 10vh;
+  min-height: 60px;
   display: flex;
   align-items: center;
   padding-left: 4%;
@@ -33,6 +44,7 @@ body{
 }
 .logo-wrap{
   width: 276px;
+  margin-right: auto ;
 }
 .toggle-btn{
   float: left;
@@ -124,14 +136,15 @@ body{
 }
 .holder h1{
   color: #fff;
-  font-family: 'baloo 2';
+  font-family: 'poppins';
   font-size: 3em;
+  font-weight: 900;
 }
 .holder p{
   color: #fff;
   font-family: 'poppins';
   font-size: 1.5em;
-  width: 40%;
+  width: 70%;
 }
 .text-holder{
   position: relative;
@@ -183,8 +196,8 @@ body{
 .holder-button{
   position: relative;
   top: 45%;
-  right: 10%;
-  width: 50%;
+  left: 10px;
+  width: 30%;
   height: fit-content;
 }
 .google-button{
@@ -202,6 +215,17 @@ body{
   background-size: 45px;
 }
 
+.search-icon{
+ background-image: url('./icons/search-icon.png');
+ background-repeat: no-repeat;
+ background-size: 40px 40px;
+ background-position: 0 10px;
+ height: 60px;
+ width: 60px;
+ margin-left: auto;
+ 
+}
+
 @media (max-width: 500px){
   .holder h1{
     font-size: 40px;
@@ -209,7 +233,9 @@ body{
   }
   .holder p{
     width: 80%;
-    font-size: 17px;
+    font-size: 22px;
+    margin-top: 20px;
+    color: rgb(238, 228, 228);
   }
   .form-control {
     width: 100%;
@@ -223,7 +249,7 @@ body{
   .holder-button{
     position: relative;
     top: 90px;
-    left: 18px;
+    left: 48px;
     min-width: 90vw;
  
   }

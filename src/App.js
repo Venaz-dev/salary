@@ -147,12 +147,12 @@ class App extends React.Component{
 
           <h3 style={{color:'red', textAlign:'center', margin: '20px'}}>Sign In to Submit salary</h3>
           <div className="button-container">
-            <button className="form-control google-button" type="button" onClick={this.googleSignIn}>
+            <button className="form-control google-button hover-animation" type="button" onClick={this.googleSignIn}>
               Sign in with Google
             </button>
           </div>
           <div className="button-container">
-            <button className="form-control github-button" type="button" onClick={this.githubSignIn}>
+            <button className="form-control github-button hover-animation" type="button" onClick={this.githubSignIn}>
               Sign in with GitHub
             </button>
             
@@ -202,7 +202,7 @@ class App extends React.Component{
                 </div>
                 
                 <div className="button-container">
-                  <button className="form-control button" type="submit">Submit Salary</button>
+                  <button className="form-control button hover-animation" type="submit">Submit Salary</button>
                 </div>  
               </form>
               <button className="btn btn-primary mr-3" onClick={() => auth().signOut()}>Logout</button>
@@ -259,7 +259,7 @@ class App extends React.Component{
                 </select>
               </div>
               <div className="button-container">
-                <button className="form-control button" type="submit">Get Salary</button>
+                <button className="form-control button hover-animation" type="submit">Get Salary</button>
               </div>  
             </form>
           </div>
@@ -281,7 +281,7 @@ class App extends React.Component{
             </div>
             <div className="holder-button">
              <button 
-              className="form-control"
+              className="form-control hover-animation"
               onClick={this.changeSubmit}
             >
               {this.state.submit ? 'Get Salary' : 'Submit Salary'}

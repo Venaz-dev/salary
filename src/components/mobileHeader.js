@@ -46,11 +46,11 @@ class Mobileheader extends React.Component {
                     </div>
                     <div className="off-canvas-inner">
                         <a href="http://techietainment.io/" className="mobile-menu">Home</a>
-                        <a href="http://techietainment.io/" className="mobile-menu">Tech News</a>
-                        <a href="http://techietainment.io/" className="mobile-menu">Hackhaton</a>
-                        <a href="http://techietainment.io/" className="mobile-menu">Freebies</a>
-                        <a href="http://techietainment.io/" className="mobile-menu">Comferences/Meetups</a>
-                        <a href="http://techietainment.io/" className="mobile-menu">Scholarships</a>
+                        <a href="http://techietainment.io/category/tech-news/" className="mobile-menu">Tech News</a>
+                        <a href="http://techietainment.io/category/hackhaton/" className="mobile-menu">Hackhaton</a>
+                        <a href="http://techietainment.io/category/freebies/" className="mobile-menu">Freebies</a>
+                        <a href="http://techietainment.io/category/conferences-meetups/" className="mobile-menu">Comferences/Meetups</a>
+                        <a href="http://techietainment.io/category/scholarships/" className="mobile-menu">Scholarships</a>
                     </div>
                 </div>
             </div>
