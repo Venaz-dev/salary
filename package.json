@@ -2,7 +2,6 @@
   "name": "salary",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://venaz-dev.github.io/salary/",
   "dependencies": {
     "cra-template": "1.0.3",
     "firebase": "^7.15.3",

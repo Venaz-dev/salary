@@ -10,11 +10,16 @@ class Mobileheader extends React.Component {
         this.setState({
             offcanva: !canvaState
         })
+        var x = document.getElementsByTagName("BODY")[0]
         if(this.state.offcanva === true ){
             document.getElementById('mobile-menu').style.display ="block";
+            var x = document.getElementsByTagName("BODY")[0]
+            x.style.overflowY= "hidden"
+            
         }
         else{
             document.getElementById('mobile-menu').style.display ="none";
+            x.style.overflowY= "auto"
         }
       }
 
@@ -26,10 +31,13 @@ class Mobileheader extends React.Component {
                         className="toggle-btn"
                         onClick={this.showOffcanvas}>
                     </div>
-                    <div class="logo-wrap is-logo-image site-branding">
+                    <div class="logo-wrap">
                         <a href="http://techietainment.io/" class="logo" title="Techie-Tainment">
                         <img class="logo-default logo-sticky-retina logo-retina"  width="213" src="http://techietainment.io/wp-content/uploads/2020/06/t2-01.png" alt="Techie-Tainment" />
                         </a>
+                    </div>
+                    <div className="search-icon float-right">
+                        <a href="http://techietainment.io/"></a>
                     </div>  
                 </header>
                 <div id='mobile-menu' className="offcanvas-menu">

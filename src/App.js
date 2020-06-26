@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Desktopheader from "./components/Header"
 import Mobileheader from "./components/mobileHeader"
+import Footer from "./components/Footer"
 import { auth , db } from './services/firebase'
 import { signInWithGoogle, signInWithGitHub} from "./helpers/auth";
 
@@ -74,12 +75,14 @@ class App extends React.Component{
     ))
     
     let totalSalary = 0
-
-    for(let i in data){
-      totalSalary += parseFloat(data[i].salary)
+    if (data != null){
+      for(let i in data){
+        totalSalary += parseFloat(data[i].salary)
+      }
     }
     
     const averageSalary = totalSalary/data.length
+    console.log(averageSalary)
     const percentage = (averageSalary/100)*10
     this.setState({
       avgSalary: averageSalary,
@@ -172,9 +175,16 @@ class App extends React.Component{
                       onChange={this.handleChange}
                   >
                           <option value="" selected> Select a Job Title </option>
-                          <option value="web developer"> Web Developer</option>
+                          <option value="frontend web developer"> (FrontEnd) Web Developer</option>
+                          <option value="backend web developer"> (BackEnd) Web Developer</option>
                           <option value="app developer"> Mobile App Developer</option>
-                  </select>
+                          <option value="ui/ux designer"> UI/UX Designer</option>
+                          <option value="web designer"> Web Designer</option>
+                          <option value="graphics designer"> Graphics Designer</option>
+                          <option value="technical writer"> Technical Writer</option>
+                          <option value="product manager"> Product Manager </option>
+                          <option value="project manager"> Project Manager </option>
+                    </select>
                 </div>
                 <div className="py-5">
                   <select 
@@ -194,7 +204,7 @@ class App extends React.Component{
                   <input 
                     className="form-control"
                     type="number"
-                    placeholder="100,000"
+                    placeholder="E.g 100,000"
                     value={this.state.salaryAmount}
                     name="salaryAmount"
                     onChange={this.handleChange}
@@ -215,20 +225,25 @@ class App extends React.Component{
   getSalary = () => {
     return(
       <div>
-          <div className="form-container">
+          <div id='get-form' className="form-container">
             <h1><strong>What am I worth?</strong></h1>
-            {this.state.avgSalary != null ?
-            
-              <p>Estimated salary for {this.state.experienceLevel} {this.state.jobTitle}
-                <p
-                  style={{color:'green', fontSize:'1em'}}
-                ><strong>
-                  #{(this.state.avgSalary - this.state.percentage).toLocaleString()} - #{(this.state.avgSalary + this.state.percentage).toLocaleString()} 
-                  </strong>
-                </p>
-              </p>
-              
-              : 
+            {this.state.avgSalary !=null ?
+              <div>
+                { this.state.avgSalary > 0 && isNaN(this.state.avgSalary) === false?
+                  
+                  <p style={{textTransform:'capitalize'}}>Estimated salary for {this.state.experienceLevel} {this.state.jobTitle}
+                    <p
+                      style={{color:'green', fontSize:'1em'}}
+                    ><strong>
+                      #{parseFloat((this.state.avgSalary - this.state.percentage)).toLocaleString()} - #{(this.state.avgSalary + this.state.percentage).toLocaleString()} 
+                      </strong>
+                    </p>
+                  </p>
+                  :
+                  <p style={{color:'red'}}> Data not available for chosen fields</p>
+                }
+              </div>
+              :
               null
             }
             <form className="py-5 px-5" onSubmit={this.loadSalary}>
@@ -240,8 +255,15 @@ class App extends React.Component{
                     onChange={this.handleChange}
                 >
                         <option value="" selected> Select a Job Title </option>
-                        <option value="web developer"> Web Developer</option>
+                        <option value="frontend web developer"> (FrontEnd) Web Developer</option>
+                        <option value="backend web developer"> (BackEnd) Web Developer</option>
                         <option value="app developer"> Mobile App Developer</option>
+                        <option value="ui/ux designer"> UI/UX Designer</option>
+                        <option value="web designer"> Web Designer</option>
+                        <option value="graphics designer"> Graphics Designer</option>
+                        <option value="technical writer"> Technical Writer</option>
+                        <option value="product manager"> Product Manager </option>
+                        <option value="project manager"> Project Manager </option>
                 </select>
               </div>
               <div className="py-5">
@@ -273,7 +295,7 @@ class App extends React.Component{
    
     return(
         <div >
-          {screenWidth <= 700 ? <Mobileheader/> : <Desktopheader /> }
+          {screenWidth <= 900 ? <Mobileheader/> : <Desktopheader /> }
           <div className="holder">
             <div className="text-holder">
               <h1>Get Paid Right</h1>
@@ -291,6 +313,7 @@ class App extends React.Component{
           <div>
             {this.state.submit ? this.submitSalary() : this.getSalary()}
           </div>
+          <Footer />
         </div>
     )
   }

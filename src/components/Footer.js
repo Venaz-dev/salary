@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="pt-5">
+    <footer className=" footer">
       <div className="container text-center">
-        <p>&copy; Howdy 2020.</p>
+        <p>&copy; 2020 TechieTainment</p>
       </div>
     </footer>
   )
